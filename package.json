@@ -1,31 +1,33 @@
 {
-  "name": "restberry-",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/materik/restberry-.git"
-  },
-  "keywords": [
-    "restberry",
-  ],
-  "author": {
-    "name": "Mattias Eriksson",
-    "email": "materik@me.com"
-  },
-  "contributors": [
-    {
-      "name": "Mattias Eriksson",
-      "email": "materik@me.com"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/materik/restberry-/issues"
-  },
-  "dependencies": {
-    "underscore": "1.5.x"
-  },
-  "homepage": "http://restberry.com"
+    "name": "restberry-auth",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/materik/restberry-auth.git"
+    },
+    "keywords": [
+        "restberry"
+    ],
+    "author": {
+        "name": "Mattias Eriksson",
+        "email": "materik@me.com"
+    },
+    "contributors": [
+        {
+            "name": "Mattias Eriksson",
+            "email": "materik@me.com"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/materik/restberry-auth/issues"
+    },
+    "dependencies": {
+        "passport": "0.1.x",
+        "restberry-authauth-local": "0.1.x",
+        "underscore": "1.5.x"
+    },
+    "homepage": "http://restberry.com"
 }
