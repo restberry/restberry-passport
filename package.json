@@ -1,18 +1,10 @@
 {
-    "name": "restberry-auth",
-    "version": "0.1.0",
-    "description": "",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/materik/restberry-auth.git"
-    },
-    "keywords": [
-        "restberry"
-    ],
     "author": {
         "name": "Mattias Eriksson",
         "email": "materik@me.com"
+    },
+    "bugs": {
+        "url": "https://github.com/materik/restberry-auth/issues"
     },
     "contributors": [
         {
@@ -20,15 +12,22 @@
             "email": "materik@me.com"
         }
     ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/materik/restberry-auth/issues"
-    },
     "dependencies": {
         "passport": "0.1.x",
-        "restberry-auth-local": "0.1.x",
-        "restberry-utils": "0.1.x",
+        "restberry-modules": "0.1.x",
         "underscore": "1.5.x"
     },
-    "homepage": "http://restberry.com"
+    "description": "Authentication module for Restberry",
+    "homepage": "http://restberry.com",
+    "keywords": [
+        "restberry"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "restberry-auth",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/materik/restberry-auth.git"
+    },
+    "version": "0.1.0"
 }
