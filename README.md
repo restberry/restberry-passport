@@ -20,7 +20,7 @@ restberry
     }));
 ```
 
-*NOTE:* restberry-auth needs to use a child module to utilize the authentcation,
+**NOTE:** restberry-auth needs to use a child module to utilize the authentcation,
 two example of these are restberry-auth-local and restberry-auth-google.
 
 This will create a User model that can be accessed in two ways:
@@ -44,7 +44,7 @@ restberry.model('Bar')
     });
 ```
 
-*NOTE:* With the second approach you will have to set the config for every
+**NOTE:** With the second approach you will have to set the config for every
 individual route while the first approach will have it set to true automatically.
 
 There are some hooks you can add to handle authentication, you need to provide a
@@ -72,7 +72,7 @@ restberry.model('Foo')
     })
 ```
 
-*NOTE:*
+**NOTE:**
 * The top function will only be called if none of the other have been defined
   for their different purposes.
 * If none of these have been set a predifined method will be used which tries to
