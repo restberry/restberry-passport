@@ -13,13 +13,16 @@
         }
     ],
     "dependencies": {
+        "http-status": "0.1.x",
         "passport": "0.1.x",
+        "restberry-logger": "0.1.x",
         "restberry-modules": "0.1.x",
         "underscore": "1.5.x"
     },
     "description": "Authentication module for Restberry",
     "homepage": "http://restberry.com",
     "keywords": [
+        "passport",
         "restberry"
     ],
     "license": "MIT",
@@ -29,5 +32,5 @@
         "type": "git",
         "url": "https://github.com/materik/restberry-auth.git"
     },
-    "version": "0.1.1"
+    "version": "0.1.2"
 }
