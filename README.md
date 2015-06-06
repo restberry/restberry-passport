@@ -1,7 +1,9 @@
 Restberry-Auth
 ==============
 
-Authentication module for Restberry.
+[![](https://img.shields.io/npm/v/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth) [![](https://img.shields.io/npm/dm/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth)
+
+Authentication module for Restberry, see [https://github.com/materik/restberry](https://github.com/materik/restberry).
 
 ## Install
 
@@ -20,8 +22,8 @@ restberry
     }));
 ```
 
-**NOTE:** restberry-auth needs to use a child module to utilize the authentcation,
-two example of these are restberry-auth-local and restberry-auth-google.
+**NOTE:** `restberry-auth` needs to use a child module to utilize the authentcation,
+two example of these are [`restberry-auth-local`](https://github.com/materik/restberry-auth-local) and [`restberry-auth-google`](https://github.com/materik/restberry-auth-google).
 
 This will create a User model that can be accessed in two ways:
 
@@ -30,7 +32,7 @@ var User = restberry.model('User');
 var User = restberry.auth.getUser();
 ```
 
-To have a route be authenticate you must set loginRequired to true for that
+To have a route be authenticate you must set `loginRequired` to true for that
 route. You can do it in two ways:
 
 ```
@@ -54,27 +56,26 @@ authority to touch the object.
 ```
 restberry.model('Foo')
     .loginRequired()
-    .isAuthorized(function(obj, req, res, next) {
-        // ex: obj.getData().user === req.user.getId()
-        next(false);
+    .isAuthorized(function(next) {
+        next(true || false);
     })
-    .isAuthorizedToDelete(function(obj, req, res, next) {
+    .isAuthorizedToDelete(function(next) {
         ...
     })
-    .isAuthorizedToCreate(function(obj, req, res, next) {
+    .isAuthorizedToCreate(function(next) {
         ...
     })
-    .isAuthorizedToRead(function(obj, req, res, next) {
+    .isAuthorizedToRead(function(next) {
         ...
     })
-    .isAuthorizedToUpdate(function(obj, req, res, next) {
+    .isAuthorizedToUpdate(function(next) {
         ...
     })
 ```
 
 **NOTE:**
-* The top function will only be called if none of the other have been defined
+* The `isAuthorized` method will only be called if none of the other have been defined
   for their different purposes.
 * If none of these have been set a predifined method will be used which tries to
   identify the user field of the object and compare that to the logged in user.
-* loginRequired needs to be set to be enabled for any of these to be used.
+* `loginRequired` needs to be set to be enabled for any of these to be used.
