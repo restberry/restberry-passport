@@ -3,7 +3,7 @@ Restberry-Auth
 
 [![](https://img.shields.io/npm/v/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth) [![](https://img.shields.io/npm/dm/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth)
 
-Authentication module for Restberry, see [https://github.com/materik/restberry](https://github.com/materik/restberry).
+Authentication module for Restberry.
 
 ## Install
 
