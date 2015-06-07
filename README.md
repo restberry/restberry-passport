@@ -1,29 +1,29 @@
-Restberry-Auth
-==============
+Restberry-Passport
+==================
 
-[![](https://img.shields.io/npm/v/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth) [![](https://img.shields.io/npm/dm/restberry-auth.svg)](https://www.npmjs.com/package/restberry-auth)
+[![](https://img.shields.io/npm/v/restberry-passport.svg)](https://www.npmjs.com/package/restberry-passport) [![](https://img.shields.io/npm/dm/restberry-passport.svg)](https://www.npmjs.com/package/restberry-passport)
 
-Authentication module for Restberry.
+Passport wrapper for Restberry.
 
 ## Install
 
 ```
-npm install restberry-auth
+npm install restberry-passport
 ```
 
 ## Usage
 
 ```
-var restberryAuth = require('restberry-auth');
+var restberryPassport = require('restberry-passport');
 
 restberry
-    .use(restberryAuth.config(function(auth) {
+    .use(restberryPassport.config(function(auth) {
         var passport = auth.passport;
     }));
 ```
 
-**NOTE:** `restberry-auth` needs to use a child module to utilize the authentcation,
-two example of these are [`restberry-auth-local`](https://github.com/materik/restberry-auth-local) and [`restberry-auth-google`](https://github.com/materik/restberry-auth-google).
+**NOTE:** `restberry-passport` needs to use a child module to utilize the authentcation,
+two example of these are [`restberry-passport-local`](https://github.com/materik/restberry-passport-local) and [`restberry-passport-google`](https://github.com/materik/restberry-passport-google).
 
 This will create a User model that can be accessed in two ways:
 
