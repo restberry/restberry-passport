@@ -17,7 +17,7 @@ npm install restberry-auth
 var restberryAuth = require('restberry-auth');
 
 restberry
-    .use(restberryAuth.use(function(auth) {
+    .use(restberryAuth.config(function(auth) {
         var passport = auth.passport;
     }));
 ```
@@ -38,10 +38,10 @@ route. You can do it in two ways:
 ```
 restberry.model('Foo')
     .loginRequired()
-    .routes.addCRUD();
+    .routes.addCRUDRoutes();
 
 restberry.model('Bar')
-    .routes.addCRUD({
+    .routes.addCRUDRoutes({
         loginRequired: true,
     });
 ```
