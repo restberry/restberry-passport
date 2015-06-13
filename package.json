@@ -15,6 +15,7 @@
     "dependencies": {
         "http-status": "0.1.x",
         "passport": "0.1.x",
+        "restberry-passport-github": "1.0.x",
         "restberry-passport-google": "1.0.x",
         "restberry-passport-local": "1.0.x",
         "restberry-logger": "1.0.x",
@@ -23,6 +24,9 @@
     "description": "Passport wrapper for Restberry",
     "homepage": "http://restberry.com",
     "keywords": [
+        "github",
+        "google",
+        "local",
         "passport",
         "restberry"
     ],
@@ -33,5 +37,5 @@
         "type": "git",
         "url": "https://github.com/materik/restberry-passport.git"
     },
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
