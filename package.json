@@ -19,6 +19,7 @@
         "restberry-passport-google": "1.0.x",
         "restberry-passport-local": "1.0.x",
         "restberry-logger": "1.0.x",
+        "restberry-utils": "1.0.x",
         "underscore": "1.8.x"
     },
     "description": "Passport wrapper for Restberry",
@@ -37,5 +38,5 @@
         "type": "git",
         "url": "https://github.com/materik/restberry-passport.git"
     },
-    "version": "1.0.3"
+    "version": "1.0.4"
 }

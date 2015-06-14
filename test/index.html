@@ -1,0 +1,26 @@
+<ul>
+  <li><a href=''>Login with Local</a></li>
+  <li><a href='/api/v1/login/github'>Login with GitHub</a></li>
+  <li><a href='/api/v1/login/google'>Login with Google</a></li>
+</ul>
+<br />
+<code id='me'>{ }</code>
+
+<script>
+  var xmlhttp = new XMLHttpRequest();
+  var url = 'http://localhost/api/v1/users?action=me';
+
+  xmlhttp.onreadystatechange=function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          myFunction(xmlhttp.responseText);
+      }
+  }
+  xmlhttp.open('GET', url, true);
+  xmlhttp.send();
+
+  function myFunction(response) {
+      var arr = JSON.parse(response);
+      var out = JSON.stringify(arr, null, 4);
+      document.getElementById('me').innerHTML = out;
+  }
+</script>

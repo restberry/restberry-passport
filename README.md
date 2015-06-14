@@ -87,3 +87,14 @@ restberry.model('Foo')
 * If none of these have been set a predifined method will be used which tries to
   identify the user field of the object and compare that to the logged in user.
 * `loginRequired` needs to be set to be enabled for any of these to be used.
+
+## Run the tests
+
+The tests require you to have the node test app running on port 6000 and
+the the index.html test file accessable at port 6001 on your localhost.
+There is an nginx-conf file that is setup for this in the test directory.
+Then simply run:
+
+```
+npm test
+```
