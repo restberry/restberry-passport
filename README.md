@@ -30,8 +30,12 @@ restberry
 This will create a new route for logging out:
 - GET /logout
 
-**NOTE:** `restberry-passport` needs to use a child module to utilize the authentcation,
-two example of these are [`restberry-passport-local`](https://github.com/materik/restberry-passport-local) and [`restberry-passport-google`](https://github.com/materik/restberry-passport-google).
+**NOTE:** `restberry-passport` needs to use a child module to utilize the
+authentication, see:
+- [`restberry-passport-github`](https://github.com/materik/restberry-passport-github)
+- [`restberry-passport-google`](https://github.com/materik/restberry-passport-google)
+- [`restberry-passport-local`](https://github.com/materik/restberry-passport-local)
+- [`restberry-passport-twitter`](https://twitter.com/materik/restberry-passport-twitter)
 
 This will create a User model that can be accessed in two ways:
 
