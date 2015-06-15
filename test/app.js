@@ -3,6 +3,8 @@ var restberry = require('restberry');
 var restberryPassport = require('restberry-passport');
 var session = require('express-session');
 
+var FACEBOOK_CLIENT_ID = '444105679101207';
+var FACEBOOK_CLIENT_SECRET = '49678fd6af105794a5f07a5dbcafeb32';
 var GITHUB_CLIENT_ID = 'f5080bcfde3e1c43ffcd';
 var GITHUB_CLIENT_SECRET = 'b42090d5643e0dc9154b0c209169ca052da4d8ff';
 var GOOGLE_CLIENT_ID = '189276784584-dnhd9l2t6sac2954qvbjbaj1r8h40b68.apps.googleusercontent.com';
@@ -15,6 +17,10 @@ var auth = restberryPassport
         var app = restberry.waf.app;
         app.use(auth.passport.initialize());
         app.use(auth.passport.session());
+    })
+    .use('facebook', {
+        clientID: FACEBOOK_CLIENT_ID,
+        clientSecret: FACEBOOK_CLIENT_SECRET,
     })
     .use('github', {
         clientID: GITHUB_CLIENT_ID,
