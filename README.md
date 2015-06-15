@@ -3,7 +3,7 @@ Restberry-Passport
 
 [![](https://img.shields.io/npm/v/restberry-passport.svg)](https://www.npmjs.com/package/restberry-passport) [![](https://img.shields.io/npm/dm/restberry-passport.svg)](https://www.npmjs.com/package/restberry-passport)
 
-Passport wrapper for Restberry.
+Restberry AUTH wrapper for passport.
 
 ## Install
 

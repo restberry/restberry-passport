@@ -24,7 +24,7 @@
         "restberry-utils": "1.0.x",
         "underscore": "1.8.x"
     },
-    "description": "Passport wrapper for Restberry",
+    "description": "Restberry AUTH wrapper for passport",
     "homepage": "http://restberry.com",
     "keywords": [
         "facebook",
@@ -42,5 +42,5 @@
         "type": "git",
         "url": "https://github.com/materik/restberry-passport.git"
     },
-    "version": "1.0.6"
+    "version": "1.0.7"
 }
