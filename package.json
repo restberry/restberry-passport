@@ -15,11 +15,11 @@
     "dependencies": {
         "http-status": "0.1.x",
         "passport": "0.1.x",
-        "restberry-passport-facebook": "1.0.x",
-        "restberry-passport-github": "1.0.x",
-        "restberry-passport-google": "1.0.x",
-        "restberry-passport-local": "1.0.x",
-        "restberry-passport-twitter": "1.0.x",
+        "restberry-passport-facebook": "1.1.x",
+        "restberry-passport-github": "1.1.x",
+        "restberry-passport-google": "1.1.x",
+        "restberry-passport-local": "1.1.x",
+        "restberry-passport-twitter": "1.1.x",
         "restberry-logger": "1.0.x",
         "restberry-utils": "1.0.x",
         "underscore": "1.8.x"
@@ -42,5 +42,5 @@
         "type": "git",
         "url": "https://github.com/materik/restberry-passport.git"
     },
-    "version": "1.0.7"
+    "version": "1.1.0"
 }
